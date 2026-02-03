@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "OpenAlex Author Finder",
+  "version": "1.1",
+  "description": "Local OpenAlex + GitHub pipeline for ML engineering candidates",
+  "action": {
+    "default_title": "OpenAlex Author Finder"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "permissions": [
+    "storage",
+    "downloads",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8787/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
